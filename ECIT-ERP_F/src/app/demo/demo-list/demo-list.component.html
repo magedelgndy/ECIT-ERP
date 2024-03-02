@@ -1,0 +1,108 @@
+
+<div class="d-flex justify-content-between p-head align-items-center mb-2">
+  
+    <div class="col-md-6 page-head mb-3">
+        <nav aria-label="breadcrumb page-title" class="mb-1">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item " style="font-size: 20px;" ><a translate>Demo</a></li>
+            </ol>
+          </nav>
+    </div>
+<div class="col-md-6 d-flex justify-content-end">
+  <a class="btn btn-primary" >
+      <span  class="svg-icon svg-icon-primary">
+      </span>
+      <span  translate>Add</span>
+  </a>
+</div>
+
+</div>
+
+<button (click)="changeLangage('ar')">Arabic</button>
+<button (click)="changeLangage('en')">English</button>
+<div>
+   <h3 ></h3>
+   <div>{{ 'Hello' | translate }}</div>
+   <p translate>Just Text</p>
+</div>
+<div class="row p-head">
+<div class="col-md-12 d-flex justify-content-end align-items-center responsive">
+  <div>
+      <select  id="selectlist" name="selectlist"  class="btn btn-outline-primary ng-pristine ng-valid ng-touched">
+          <option  value="5">5</option>
+          <option value="10">10</option>
+          <option value="25">25</option>
+          <option  value="50">50</option>
+          <option  value="100">100</option>
+      </select>
+  </div>
+  &nbsp;
+
+  <div>
+      <select  id="selectlist" name="selectlist" class="btn btn-outline-primary ng-pristine ng-valid ng-touched">
+            <option value="all"> جميع الورش</option>
+            <option value="active">الورش الفعالة</option>
+            <option value="deActive">الورش المعطلة</option>
+      </select>
+  </div>
+</div>
+
+</div>
+
+
+  <div class="input-group search-group search-form">
+      <input type="search" class="form-control ng-pristine ng-valid ng-touched">
+      <button type="submit" >
+        <span class="input-group-text"> search
+          <i class="fas fa-search"></i>
+      </span>
+      </button>
+  </div>
+ 
+
+<br>
+<div class="shop">
+    <div class="table-responsive">
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">اسم الورشة</th>
+            <th scope="col">تاريخ البدء</th>
+            <th scope="col">تاريخ الانتهاء</th>
+            <th scope="col">المدينة</th>
+            <th scope="col">الموقع</th>
+            <th scope="col">مواعيد الورشة</th>
+          </tr>
+        </thead>
+        <tbody>
+
+          <tr >
+            <th  scope="row"></th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <a tooltipclass="view" class="btn-icon view_m"  placement="top" ngbTooltip="عرض" >
+ 
+            </a>
+            <a tooltipclass="edit" class="btn-icon edit_m ng-star-inserted">
+                </a>
+         </td>
+          </tr>
+
+        </tbody>
+      </table>
+</div>
+<br><br>
+
+</div>
+<div style="margin-top: 20px" class="d-flex justify-content-center" >
+<ngb-pagination class="d-flex justify-content-center"
+[boundaryLinks]="false" [collectionSize]="6"
+[pageSize]="pageSize"  [maxSize]="6"></ngb-pagination>
+</div>
+
+
+
